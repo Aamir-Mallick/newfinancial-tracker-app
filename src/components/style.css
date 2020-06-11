@@ -1,0 +1,195 @@
+body {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 700px) {
+  .main_div {
+    margin: 10px auto;
+
+    width: 700px;
+  }
+
+  .table_container tr th {
+    color: white;
+    background-color: blue;
+    font-size: 18px;
+    border: 1px solid black;
+  }
+
+  .table_container tbody tr td {
+    column-span: 0px;
+    box-shadow: 0px 0px 2px 2px #c9d5f8;
+  }
+
+  .main_btn_container {
+    display: flex;
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px black;
+    justify-content: space-between;
+    margin: 5px auto;
+  }
+
+  .StockButton {
+    box-shadow: 0px 0px 2px 2px #b5b5b7;
+    margin: 20px 5px 20px 10px;
+    font-size: 18px;
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+  }
+
+  .StockName {
+    margin: 20px 5px 20px 10px;
+  }
+
+  /* Modal style starts here*/
+
+  .model_main_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(83, 83, 84, 0.5);
+  }
+
+  .model_inner_container {
+    position: relative;
+    width: 640px;
+    height: 300px;
+    box-shadow: 0px 0px 2px 2px #838383;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .model_content_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .model_content_container_1 {
+    margin-left: 20px;
+  }
+  .model_content_container_2 {
+    margin-right: 20px;
+  }
+}
+
+/*mobile view*/
+
+@media screen and (max-width: 699px) {
+  .main_div {
+    margin: 10px auto;
+
+    width: 450px;
+  }
+
+  .table_container tr th {
+    color: white;
+    background-color: blue;
+    font-size: 12px;
+    border: 1px solid black;
+  }
+
+  .table_container tbody tr td {
+    column-span: 0px;
+    box-shadow: 0px 0px 2px 2px #c9d5f8;
+  }
+
+  .main_btn_container {
+    display: flex;
+    width: 400px;
+    height: 160px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px black;
+    justify-content: space-between;
+    margin: 5px auto;
+  }
+
+  .StockButton {
+    box-shadow: 0px 0px 2px 2px #b5b5b7;
+    margin: 10px 2px 10px 2px;
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+  }
+
+  .StockName {
+    margin: 10px 2px 10px 5px;
+    font-size: 12px;
+  }
+
+  /* Modal style starts here*/
+
+  .model_main_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(83, 83, 84, 0.5);
+  }
+
+  .model_inner_container {
+    position: relative;
+    width: 400px;
+    height: 260px;
+    box-shadow: 0px 0px 2px 2px #838383;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .model_content_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .model_content_container_1 {
+    margin-left: 20px;
+  }
+
+  .model_content_container_1 p {
+    font-size: 12px;
+  }
+  .model_content_container_2 {
+    margin-right: 10px;
+    margin-left: 40px;
+  }
+
+  .model_content_container_2 input[type="text"] {
+    width: 100px;
+    height: 8px;
+    position: relative;
+    top: -5px;
+  }
+
+  .model_content_container_2 input[name="buyPrice"] {
+    position: relative;
+    top: -12px;
+  }
+
+  .model_content_container_2 input[name="date"] {
+    position: relative;
+    top: -20px;
+    width: 100px;
+    height: 10px;
+  }
+
+  .model_content_container_2 input[name="add"] {
+    position: relative;
+  }
+
+  .model_content_container_2 p {
+    font-size: 12px;
+  }
+}
